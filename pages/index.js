@@ -35,16 +35,15 @@ export default function Home() {
       <style jsx>{`
         .page-content {
           margin: 10% 5%;
-          overflow-y: scroll;
-          display: inline-block;
         }
-
+        
         .about {
           padding-bottom: 0 2% 0px 2%;
           margin: 0 0 20px 0;
           display: table;
           position: relative;
           height: auto;
+          width: 100%;
         }
 
         .intro-container {
@@ -60,17 +59,9 @@ export default function Home() {
           width: 50%;
           margin: 0 10px;
           padding: 20px 20px;
-          
+          text-align: center;
         }
       `}</style>
     </div>
-    // <div className={styles.container}>
-    //   <Meta />
-    //   <Nav />
-
-
-     
-    //   <Footer />
-    // </div>
   )
 }
