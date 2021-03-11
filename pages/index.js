@@ -1,59 +1,76 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image';
 
 import Meta from '../components/Meta';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Tiles from '../components/Tiles';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="page-container">
       <Meta />
       <Nav />
 
-      {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="page-content">
+        <div className="about">
+          <div className="intro-container">
+            <h1>Brontë Hampton</h1>
+            <h2>Associate AND Keen Crafter</h2>
+            <h2>@ AND Digital</h2>
+          </div>
+          <div className="image-container">
+            <Image 
+              src={"/london_sept_027.jpg"}
+              alt="red chair photo"
+              width={500}
+              height={500}
+            />
+          </div>
         </div>
-      </main> */}
+        <Tiles />
+      </div>
+      <Footer />
+      <style jsx>{`
+        .page-content {
+          margin: 10% 5%;
+          overflow-y: scroll;
+          display: inline-block;
+        }
+
+        .about {
+          padding-bottom: 0 2% 0px 2%;
+          margin: 0 0 20px 0;
+          display: table;
+          position: relative;
+          height: auto;
+        }
+
+        .intro-container {
+          display: table-cell;
+          float: left;
+          margin: 0 10px;
+          padding: 20px;
+          color: #1c378a;
+        }
+
+        .image-container {
+          display: table-cell;
+          width: 50%;
+          margin: 0 10px;
+          padding: 20px 20px;
+          
+        }
+      `}</style>
+    </div>
+    // <div className={styles.container}>
+    //   <Meta />
+    //   <Nav />
+
 
      
-      <Footer />
-    </div>
+    //   <Footer />
+    // </div>
   )
 }
