@@ -42,10 +42,12 @@ const Footer = () => (
         font-weight: bold;
         color: #1c378a;
         height: auto;
+        list-style-type: none;
+        padding: 0;
       }
 
       #footer-items li {
-        list-style-type: none;
+        
         position: relative;
         float: left;
         width: 50%;
