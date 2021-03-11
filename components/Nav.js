@@ -18,7 +18,7 @@ const Nav = () => (
     <style jsx>{`
       .nav-container {
         background: #ffca2b;
-        border-bottom: 12px double #ffffff;
+        border-bottom: 0.75em double #ffffff;
         height: auto;
         width: 100%;
         margin: 0;
@@ -28,9 +28,9 @@ const Nav = () => (
       }
 
       .nav-items {
-        font: 18px menlo;
+        font: 1.25em menlo;
         font-weight: bold;
-        padding: 20px;
+        padding: 1.25em;
       }
 
       a {
