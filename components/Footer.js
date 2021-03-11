@@ -29,7 +29,7 @@ const Footer = () => (
     <style jsx>{`
       .footer-container {
         background: #ffca2b;
-        border-top: 12px double #ffffff;
+        border-top: 0.75em double #ffffff;
         height: auto;
         width: 100%;
         margin: 0;
@@ -38,14 +38,16 @@ const Footer = () => (
       }
 
       #footer-items {
-        font: 14px menlo;
+        font: 1em menlo;
         font-weight: bold;
         color: #1c378a;
-        height:auto;
+        height: auto;
+        list-style-type: none;
+        padding: 0;
       }
 
       #footer-items li {
-        list-style-type: none;
+        
         position: relative;
         float: left;
         width: 50%;
@@ -56,7 +58,7 @@ const Footer = () => (
         display: flex;
         align-items: center;
         flex-direction: row;
-        padding: 0 10px 20px 10px;
+        padding: 0 0.75em 1.25em 0.75em;
       }
 
       a {
@@ -67,10 +69,16 @@ const Footer = () => (
 
       img {
         margin: 0;
-        // position: absolute;
         transform: translate(-50%, 25%);
         filter: invert(14%) sepia(88%) saturate(2136%) hue-rotate(218deg)
           brightness(94%) contrast(93%);
+      }
+
+      @media (max-width: 600px) {
+        #footer-items li {
+          flex-direction: column;
+          width: 100%;
+        }
       }
     `}</style>
   </div>

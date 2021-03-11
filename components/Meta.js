@@ -12,7 +12,7 @@ const Meta = () => (
     <style jsx global>{`
       body {
         background: #ffffff;
-        font: 11px menlo;
+        font: 1em menlo;
         margin: 0;
       }
     `}</style>

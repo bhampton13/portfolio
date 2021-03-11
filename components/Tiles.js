@@ -30,6 +30,11 @@ const tileData = [
   { title: 'trello', link: 'trello' },
   { title: 'slack', link: 'slack' },
   { title: 'jest', link: 'jest' },
+  { title: 'npm', link: 'npm' },
+  { title: 'yarn', link: 'yarn' },
+  { title: 'wordpress', link: 'wordpress' },
+  { title: 'visualstudiocode', link: 'visualstudiocode' },
+  { title: 'xcode', link: 'xcode' },
 ];
 
 class Tiles extends Component {
@@ -52,7 +57,7 @@ class Tiles extends Component {
             flex-wrap: wrap;
             width: 90%;
             margin: 0 5% 0 3%;
-            padding: 0; /* Clears unordered list default of 40px */
+            padding: 0;
           }
 
           .clear:after {

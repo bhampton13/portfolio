@@ -35,42 +35,33 @@ export default function Home() {
       <style jsx>{`
         .page-content {
           margin: 10% 5%;
-          overflow-y: scroll;
-          display: inline-block;
         }
 
         .about {
-          padding-bottom: 0 2% 0px 2%;
-          margin: 0 0 20px 0;
+          padding-bottom: 0 2% 0 2%;
+          margin: 0 0 1.25em 0;
           display: table;
           position: relative;
           height: auto;
+          width: 100%;
         }
 
         .intro-container {
           display: table-cell;
           float: left;
-          margin: 0 10px;
-          padding: 20px;
+          margin: 0 0.75em;
+          padding: 1.25em;
           color: #1c378a;
         }
 
         .image-container {
           display: table-cell;
           width: 50%;
-          margin: 0 10px;
-          padding: 20px 20px;
-          
+          margin: 0 0.75em;
+          padding: 1.25em;
+          text-align: center;
         }
       `}</style>
     </div>
-    // <div className={styles.container}>
-    //   <Meta />
-    //   <Nav />
-
-
-     
-    //   <Footer />
-    // </div>
   )
 }
