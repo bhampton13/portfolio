@@ -19,7 +19,7 @@ const Nav = () => (
       .nav-container {
         background: #ffca2b;
         border-bottom: 0.75em double #ffffff;
-        height: auto;
+        height: 65px;
         width: 100%;
         margin: 0;
         position: fixed;
