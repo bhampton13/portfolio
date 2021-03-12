@@ -44,7 +44,7 @@ export default function Home() {
           margin-top: 65px;
           margin-bottom: 75px;
           height: 100%;
-          padding: 5%;
+          padding: 0.75em 3em;
         }
 
         .about {
@@ -79,7 +79,7 @@ export default function Home() {
 
         @media (max-width: 600px) {
           .page-content {
-            margin-bottom: 120px;
+            margin-bottom: 140px;
           }
 
           .about {

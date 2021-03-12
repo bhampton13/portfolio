@@ -13,7 +13,9 @@ const Meta = () => (
       body {
         background: #ffffff;
         font: 1em menlo;
+        color: #1c378a;
         margin: 0;
+        line-height: 2em;
       }
     `}</style>
   </div>
