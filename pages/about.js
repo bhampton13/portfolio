@@ -184,6 +184,19 @@ function About() {
             </tbody>
           </table>
         </div>
+        <div className="section-container">
+          <h2>Interests</h2>
+          <hr />
+          <p>
+            Head Coach of AU Tarannau Cheerleading Team 2019-2020. Former coach
+            of Alder Grange School’s cheerleading squad the AG CATS, leading
+            them to achieve 3 National Titles; this involved organising and
+            choreographing a variety of routines for 80 students aged 11-16.
+            <br /> <br />
+            Avid self-taught amateur baker. I enjoy completing tutorials to
+            improve my Craft Bakery, Sugar Craft and Patisserie Craft skills.
+          </p>
+        </div>
       </div>
       <Footer />
       <style jsx>{`
@@ -219,7 +232,7 @@ function About() {
         table {
           width: 100%;
         }
-        
+
         @media (max-width: 600px) {
           .page-content {
             margin-bottom: 140px;
