@@ -14,12 +14,15 @@ const Nav = () => (
       <Link href="/about">
         <a style={linkStyle}>About</a>
       </Link>
+      <Link href="/projects">
+        <a style={linkStyle}>Projects</a>
+      </Link>
     </div>
     <style jsx>{`
       .nav-container {
         background: #ffca2b;
         border-bottom: 0.75em double #ffffff;
-        height: 65px;
+        height: 75px;
         width: 100%;
         margin: 0;
         position: fixed;
@@ -30,7 +33,7 @@ const Nav = () => (
       .nav-items {
         font: 1.25em menlo;
         font-weight: bold;
-        padding: 1.25em;
+        padding: 1em 1.25em;
       }
 
       a {
