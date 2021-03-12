@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 
 import Meta from '../components/Meta';
@@ -21,47 +21,82 @@ export default function Home() {
             <h2>@ AND Digital</h2>
           </div>
           <div className="image-container">
-            <Image 
-              src={"/london_sept_027.jpg"}
+            <Image
+              src={'/london_sept_027.jpg'}
               alt="red chair photo"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
             />
           </div>
         </div>
+        <hr />
         <Tiles />
       </div>
       <Footer />
       <style jsx>{`
+        .page-container {
+          margin: 0;
+          height: 100%;
+          padding: 0;
+        }
+
         .page-content {
-          margin: 10% 5%;
+          margin-top: 65px;
+          margin-bottom: 75px;
+          height: 100%;
+          padding: 5%;
         }
 
         .about {
-          padding-bottom: 0 2% 0 2%;
+          padding: 0 2% 0 2%;
           margin: 0 0 1.25em 0;
-          display: table;
+          display: flex;
+          flex-direction: row;
           position: relative;
           height: auto;
           width: 100%;
         }
 
         .intro-container {
-          display: table-cell;
+          display: block;
           float: left;
-          margin: 0 0.75em;
+          width: 50%;
           padding: 1.25em;
           color: #1c378a;
         }
 
         .image-container {
-          display: table-cell;
+          display: flex;
           width: 50%;
-          margin: 0 0.75em;
           padding: 1.25em;
-          text-align: center;
+          justify-content: center;
+        }
+
+        hr {
+          border-top: 0.75em double #ffca2b;
+          margin-bottom: 2.25em;
+        }
+
+        @media (max-width: 600px) {
+          .page-content {
+            margin-bottom: 120px;
+          }
+
+          .about {
+            flex-direction: column;
+            flex-direction: column-reverse;
+            width: 100%;
+          }
+
+          .intro-container {
+            width: 100%;
+          }
+
+          .image-container {
+            width: 100%;
+          }
         }
       `}</style>
     </div>
-  )
+  );
 }

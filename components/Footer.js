@@ -30,7 +30,7 @@ const Footer = () => (
       .footer-container {
         background: #ffca2b;
         border-top: 0.75em double #ffffff;
-        height: auto;
+        height: 75px;
         width: 100%;
         margin: 0;
         bottom: 0;
@@ -47,7 +47,6 @@ const Footer = () => (
       }
 
       #footer-items li {
-        
         position: relative;
         float: left;
         width: 50%;
@@ -75,6 +74,10 @@ const Footer = () => (
       }
 
       @media (max-width: 600px) {
+        .footer-container{
+          height: 120px;
+        }
+
         #footer-items li {
           flex-direction: column;
           width: 100%;
