@@ -75,7 +75,7 @@ const Footer = () => (
 
       @media (max-width: 600px) {
         .footer-container{
-          height: 120px;
+          height: 140px;
         }
 
         #footer-items li {
