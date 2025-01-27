@@ -8,14 +8,14 @@ const linkStyle = {
 const Nav = () => (
   <div className="nav-container">
     <div className="nav-items">
-      <Link href="/">
-        <a style={linkStyle}>Home</a>
+      <Link href="/" style={linkStyle}>
+        Home
       </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About</a>
+      <Link href="/about" style={linkStyle}>
+        About
       </Link>
-      <Link href="/projects">
-        <a style={linkStyle}>Projects</a>
+      <Link href="/projects" style={linkStyle}>
+        Projects
       </Link>
     </div>
     <style jsx>{`

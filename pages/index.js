@@ -17,7 +17,7 @@ export default function Home() {
         <div className="about">
           <div className="intro-container">
             <h1>Brontë Hampton</h1>
-            <h2>Associate AND Keen Crafter</h2>
+            <h2>Product Developer AND Keen Crafter</h2>
             <h2>@ AND Digital</h2>
           </div>
           <div className="image-container">
